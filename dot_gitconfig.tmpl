@@ -1,0 +1,33 @@
+[user]
+	name = pirosiki197
+{{- if (and (hasKey . "email") .email) }}
+	email = {{ .email | quote }}
+{{- end }}
+	signingkey = {{ .chezmoi.homeDir }}/.ssh/id_ed25519.pub
+[core]
+	editor = code --wait
+[init]
+	defaultBranch = main
+
+[alias]
+	dft = -c diff.external=difft diff
+	dshow = -c diff.external=difft show --ext-diff
+	lograph = log --oneline --graph
+	pushf = push --force-with-lease
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[pull]
+	autostash = true
+[fetch]
+	prune = true
+[rebase]
+	autoStash = true
+[gpg]
+	format = ssh
+[pager]
+	branch = false
