@@ -11,6 +11,8 @@ setopt HIST_IGNORE_SPACE
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+bindkey -e
+
 export EDITOR="nvim"
 
 export PATH="$PATH:$HOME/.local/bin"
@@ -25,8 +27,8 @@ eval "$(sheldon source)"
 
 source "$HOME/.cargo/env"
 
-source "/home/pirosiki/.deno/env"
-. "/home/pirosiki/.deno/env"
+source "$HOME/.deno/env"
+. "$HOME/.deno/env"
 
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
@@ -35,7 +37,7 @@ source <(fzf --zsh)
 eval "$(starship init zsh)"
 
 # fnm
-FNM_PATH="/home/pirosiki/.local/share/fnm"
+FNM_PATH="$HOME/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
   eval "`fnm env`"
