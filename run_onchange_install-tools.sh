@@ -4,4 +4,5 @@
 
 set -e
 
+export PATH=$PATH:$HOME/.local/share/aquaproj-aqua/bin
 aqua install -a -l
