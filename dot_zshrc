@@ -39,9 +39,13 @@ eval "$(sheldon source)"
 source <(fzf --zsh)
 eval "$(starship init zsh)"
 
-source "$HOME/.cargo/env"
+if [[ -f "$HOME/.cargo/env" ]]; then
+    . "$HOME/.cargo/env"
+fi
 
-. "$HOME/.deno/env"
+if [[ -f "$HOME/.deno/env" ]]; then
+    . "$HOME/.deno/env"
+fi
 
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
