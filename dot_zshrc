@@ -19,13 +19,15 @@ path=(
   $HOME/go/bin
   /usr/local/zig
   $HOME/.local/lua-language-server/bin
-  $HOME/.local/share/aquaproj-aqua/bin
   $path
 )
 
 typeset -U path
 
+eval "$(~/.local/bin/mise activate zsh)"
+
 export AQUA_GLOBAL_CONFIG="$HOME/.config/aquaproj-aqua/aqua.yaml"
+export PATH="$HOME/.local/share/aquaproj-aqua/bin:$PATH"
 
 if [[ $(command -v lsd) ]]; then
     alias ls='lsd'
