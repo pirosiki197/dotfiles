@@ -34,6 +34,11 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to bottom window" })
 vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to above window" })
 
+vim.keymap.set('i', '<A-h>', '<Left>', { noremap = true })
+vim.keymap.set('i', '<A-j>', '<Down>', { noremap = true })
+vim.keymap.set('i', '<A-k>', '<Up>', { noremap = true })
+vim.keymap.set('i', '<A-l>', '<Right>', { noremap = true })
+
 vim.keymap.set("n", "<leader>/", "<cmd>noh<CR>", { desc = "Clear search highlights" })
 
 vim.api.nvim_create_autocmd("BufReadPost", {
