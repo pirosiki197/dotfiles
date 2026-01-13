@@ -24,7 +24,7 @@ path=(
 
 typeset -U path
 
-eval "$(mise activate zsh)"
+export PATH="$HOME/.local/share/mise/shims:$PATH"
 
 export AQUA_GLOBAL_CONFIG="$HOME/.config/aquaproj-aqua/aqua.yaml"
 export PATH="$HOME/.local/share/aquaproj-aqua/bin:$PATH"
