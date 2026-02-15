@@ -1,10 +1,12 @@
 return {
   {
     "neovim/nvim-lspconfig",
+    version = "*",
     event = { "BufReadPre", "BufNewFile" },
   },
   {
     "stevearc/conform.nvim",
+    version = "*",
     opts = {
       formatters_by_ft = {
         go = { "goimports" },
@@ -20,7 +22,9 @@ return {
   {
     "ray-x/lsp_signature.nvim",
     event = "InsertEnter",
-    opts = {},
+    opts = {
+      bind = true,
+    },
   },
   {
     "pmizio/typescript-tools.nvim",

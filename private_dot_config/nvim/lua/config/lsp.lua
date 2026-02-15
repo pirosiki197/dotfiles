@@ -1,7 +1,8 @@
 vim.lsp.enable({
-  "lua_ls",
-  "gopls",
   "clangd",
+  "gopls",
+  "hls",
+  "lua_ls",
   "pyright",
   "rust_analyzer",
   "yamlls",
@@ -10,7 +11,7 @@ vim.lsp.enable({
 
 Snacks.keymap.set("n", "<leader>k",
   function() vim.lsp.buf.hover({ border = "single" }) end,
-  { lsp = { method = "textDocument/hover" }, buffer = buf, desc = "Show hover documentation" })
+  { lsp = { method = "textDocument/hover" }, desc = "Show hover documentation" })
 
 Snacks.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {
   lsp = { method = "textDocument/codeAction" },

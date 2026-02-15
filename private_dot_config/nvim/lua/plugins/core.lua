@@ -1,6 +1,7 @@
 return {
   {
     "folke/tokyonight.nvim",
+    version = "*",
     lazy = false,
     priority = 1000,
     opts = {},
@@ -18,6 +19,7 @@ return {
   },
   {
     "windwp/nvim-autopairs",
+    version = "*",
     opts = {},
   },
 }
