@@ -12,6 +12,11 @@ return {
         go = { "goimports" },
         python = { "ruff_format" },
         terraform = { "terraform_fmt" },
+
+        javascript = { "prettier" },
+        typescript = { "prettier" },
+        javascriptreact = { "prettier" },
+        typescriptreact = { "prettier" },
       },
       format_on_save = {
         timeout_ms = 5000,
@@ -25,10 +30,5 @@ return {
     opts = {
       bind = true,
     },
-  },
-  {
-    "pmizio/typescript-tools.nvim",
-    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-    opts = {},
   },
 }

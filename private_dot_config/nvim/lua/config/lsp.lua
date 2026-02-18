@@ -5,6 +5,7 @@ vim.lsp.enable({
   "lua_ls",
   "pyright",
   "rust_analyzer",
+  "tailwindcss",
   "yamlls",
   "zls",
 })
