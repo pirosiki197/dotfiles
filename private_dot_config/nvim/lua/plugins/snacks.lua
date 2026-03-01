@@ -30,5 +30,7 @@ return {
     { "gI",         function() Snacks.picker.lsp_implementations() end, desc = "Goto Implementation" },
     { "gci",        function() Snacks.picker.lsp_incoming_calls() end,  desc = "Calls Incoming" },
     { "<leader>ss", function() Snacks.picker.lsp_symbols() end,         desc = "LSP Symbols" },
+    -- buffer
+    { "<leader>bd", function() Snacks.bufdelete() end,                  desc = "Delete buffer" },
   }
 }
