@@ -32,5 +32,6 @@ return {
     { "<leader>ss", function() Snacks.picker.lsp_symbols() end,         desc = "LSP Symbols" },
     -- buffer
     { "<leader>bd", function() Snacks.bufdelete() end,                  desc = "Delete buffer" },
+    { "<leader>ba", function() Snacks.bufdelete.all() end,              desc = "Delete all buffers" },
   }
 }
