@@ -1,0 +1,79 @@
+{pkgs, ...}: {
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
+
+    settings = {
+      aws.format = ''\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'';
+      buf.disabled = true;
+      bun.format = ''\[[$symbol($version)]($style)\]'';
+      c = {
+        format = ''\[[$symbol($name)]($style)\]'';
+        symbol = " ";
+      };
+      cpp = {
+        format = ''\[[$symbol($name)]($style)\]'';
+        symbol = " ";
+      };
+      cmake.format = ''\[[$symbol]($style)\]'';
+      cmd_duration.format = ''\[[⏱ $duration]($style)\]'';
+      conda.format = ''\[[$symbol$environment]($style)\]'';
+      dart.format = ''\[[$symbol($version)]($style)\]'';
+      deno.format = ''\[[$symbol($version)]($style)\]'';
+      docker_context = {
+        format = ''\[[$symbol$context]($style)\]'';
+        symbol = " ";
+      };
+      dotnet.format = ''\[[$symbol($version)(🎯 $tfm)]($style)\]'';
+      gcloud.format = ''\[[$symbol$account(@$domain)(\($region\))]($style)\]'';
+      git_branch = {
+        format = ''\[[$symbol$branch]($style)\]'';
+        symbol = " ";
+      };
+      git_commit.tag_symbol = "  ";
+      git_status.disabled = true;
+      golang = {
+        format = ''\[[$symbol($version)]($style)\]'';
+        symbol = " ";
+      };
+      haskell.format = ''\[[$symbol($version)]($style)\]'';
+      helm.format = ''\[[$symbol($version)]($style)\]'';
+      java.format = ''\[[$symbol($version)]($style)\]'';
+      kotlin.format = ''\[[$symbol($version)]($style)\]'';
+      kubernetes.format = ''\[[$symbol$context( \($namespace\))]($style)\]'';
+      lua.format = ''\[[$symbol($version)]($style)\]'';
+      memory_usage.format = ''\[$symbol[$ram( | $swap)]($style)\]'';
+      nix_shell.format = ''\[[$symbol$state( \($name\))]($style)\]'';
+      nodejs = {
+        format = ''\[[$symbol($version)]($style)\]'';
+        symbol = " ";
+      };
+      os.format = ''\[[$symbol]($style)\]'';
+      package = {
+        format = ''\[[$symbol$version]($style)\]'';
+        symbol = "󰏗 ";
+      };
+      perl.format = ''\[[$symbol]($style)\]'';
+      php.format = ''\[[$symbol($version)]($style)\]'';
+      python = {
+        format = ''[[$symbol$pyenv_prefix($version)(\($virtualenv\))]($style)]'';
+        symbol = " ";
+      };
+      ruby.format = ''\[[$symbol($version)]($style)\]'';
+      rust = {
+        format = ''\[[$symbol($version)]($style)\]'';
+        symbol = "󱘗 ";
+      };
+      scala.format = ''\[[$symbol($version)]($style)\]'';
+      sudo.format = ''\[[as $symbol]($style)\]'';
+      swift.format = ''\[[$symbol($version)]($style)\]'';
+      terraform.format = ''\[[$symbol$workspace]($style)\]'';
+      time.format = ''\[[$time]($style)\]'';
+      username.format = "[$user]($style) ";
+      zig = {
+        format = ''\[[$symbol($version)]($style)\]'';
+        symbol = " ";
+      };
+    };
+  };
+}
