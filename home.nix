@@ -18,8 +18,6 @@
   ];
 
   home.packages = [
-    pkgs.curl
-    pkgs.htop
     pkgs.bat
     pkgs.dust
     pkgs.ripgrep
