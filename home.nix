@@ -24,6 +24,7 @@
     pkgs.dust
     pkgs.ripgrep
     pkgs.fd
+    pkgs.tree-sitter
   ];
 
   programs.eza = {
