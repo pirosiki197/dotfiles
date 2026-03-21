@@ -4,8 +4,6 @@
   ...
 }: {
   home.packages = with pkgs; [
-    zig
-    zls
     lua-language-server
   ];
 
