@@ -8,6 +8,9 @@
   ];
 
   programs.go.enable = true;
+  home.sessionPath = [
+    "${config.home.homeDirectory}/go/bin"
+  ];
 
   programs.direnv = {
     enable = true;
@@ -15,7 +18,8 @@
     enableZshIntegration = true;
   };
 
-  home.sessionPath = [
-    "${config.home.homeDirectory}/go/bin"
-  ];
+  programs.mise = {
+    enable = true;
+    enableZshIntegration = true;
+  };
 }
