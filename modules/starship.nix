@@ -56,7 +56,7 @@
       perl.format = ''\[[$symbol]($style)\]'';
       php.format = ''\[[$symbol($version)]($style)\]'';
       python = {
-        format = ''[[$symbol$pyenv_prefix($version)(\($virtualenv\))]($style)]'';
+        format = ''\[[$symbol$pyenv_prefix($version)(\($virtualenv\))]($style)\]'';
         symbol = " ";
       };
       ruby.format = ''\[[$symbol($version)]($style)\]'';
