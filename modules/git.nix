@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   programs.git = {
     enable = true;
-    includes = [{ path = "~/.gitconfig.local"; }];
+    includes = [{path = "~/.gitconfig.local";}];
     settings = {
       user = {
         name = "pirosiki197";
