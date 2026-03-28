@@ -5,6 +5,7 @@
 }: {
   home.packages = with pkgs; [
     lua-language-server
+    yaml-language-server
   ];
 
   programs.go.enable = true;
