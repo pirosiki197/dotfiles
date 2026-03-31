@@ -4,6 +4,7 @@
   ...
 }: {
   home.packages = with pkgs; [
+    gopls
     lua-language-server
     yaml-language-server
   ];

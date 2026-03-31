@@ -9,7 +9,6 @@ return {
     version = "*",
     opts = {
       formatters_by_ft = {
-        go = { "goimports" },
         python = { "ruff_format" },
         terraform = { "terraform_fmt" },
 
