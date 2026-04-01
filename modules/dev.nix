@@ -6,6 +6,7 @@
   home.packages = with pkgs; [
     gopls
     lua-language-server
+    pyright
     yaml-language-server
   ];
 
