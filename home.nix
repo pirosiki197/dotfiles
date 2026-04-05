@@ -17,6 +17,7 @@ in {
     ./modules/git.nix
     ./modules/shell.nix
     ./modules/starship.nix
+    ./modules/tmux.nix
   ];
 
   home.packages = [
