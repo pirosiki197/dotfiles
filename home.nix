@@ -2,9 +2,7 @@
   config,
   pkgs,
   ...
-}: let
-  nvimConfigPath = "${config.home.homeDirectory}/.config/home-manager/nvim";
-in {
+}: {
   home.username = "pirosiki";
   home.homeDirectory = "/home/pirosiki";
 
@@ -37,5 +35,4 @@ in {
     enable = true;
     defaultEditor = true;
   };
-  xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink nvimConfigPath;
 }
