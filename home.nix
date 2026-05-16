@@ -10,10 +10,6 @@
 
   programs.home-manager.enable = true;
 
-  home.sessionVariables = {
-    EDITOR = "nvim";
-  };
-
   imports = [
     ./modules/dev.nix
     ./modules/git.nix
@@ -28,11 +24,17 @@
     pkgs.ripgrep
     pkgs.fd
     pkgs.tree-sitter
-    pkgs.neovim
   ];
 
   programs.eza = {
     enable = true;
     enableZshIntegration = true;
+  };
+
+  programs.neovim = {
+    enable = true;
+    sideloadInitLua = true;
+    defaultEditor = true;
+    extraPackages = [pkgs.nodejs];
   };
 }

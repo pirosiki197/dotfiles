@@ -3,13 +3,6 @@
   pkgs,
   ...
 }: {
-  home.packages = with pkgs; [
-    gopls
-    lua-language-server
-    pyright
-    yaml-language-server
-  ];
-
   programs.go.enable = true;
   home.sessionPath = [
     "${config.home.homeDirectory}/go/bin"
