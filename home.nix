@@ -23,6 +23,7 @@
     pkgs.dust
     pkgs.ripgrep
     pkgs.fd
+    pkgs.sd
     pkgs.tree-sitter
   ];
 
