@@ -6,7 +6,7 @@
   home.username = "pirosiki";
   home.homeDirectory = "/home/pirosiki";
 
-  home.stateVersion = "25.11";
+  home.stateVersion = "26.05";
 
   programs.home-manager.enable = true;
 
@@ -25,9 +25,16 @@
     pkgs.fd
     pkgs.sd
     pkgs.tree-sitter
+    pkgs.awscli2
+    pkgs.aws-sam-cli
   ];
 
   programs.eza = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
+  programs.zoxide = {
     enable = true;
     enableZshIntegration = true;
   };
