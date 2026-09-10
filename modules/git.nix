@@ -10,6 +10,9 @@
       fetch.prune = true;
       pull.autostash = true;
       rebase.autostash = true;
+      core = {
+        quotepath = false;
+      };
       alias = {
         st = "status";
         br = "branch";
